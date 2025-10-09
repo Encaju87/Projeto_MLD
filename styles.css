@@ -1,67 +1,24 @@
 :root {
-	--cor-principal: #181b25; /* 60% */
-	--cor-secundaria: #243446; /* 30% */
-	--cor-destaque: #c7ac6b; /* 10% */
-	--cor-complementar1: #415562;
-	--cor-complementar2: #737d77;
-}
-
-html {
-    scroll-padding-top: 150px;
-}
-
-body {
-	color: var(--cor-complementar1);
-	font-family: Arial, sans-serif;
-}
-
-header {
+	--cor-principal: #181b25;
+	--cor-secundaria: #243446;
+	--cor-destaque: #c7ac6b;
+  }
+  
+  body {
 	background-color: var(--cor-principal);
-	color: var(--cor-complementar2);
-	padding: 1rem;
-	border-bottom-right-radius: 25px;
-	border-bottom-left-radius: 25px;
-}
-
-.nav a {
-	color: var(--cor-destaque);
-	text-decoration: none;
-	margin: 0 1rem;
-}
-
-section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 400px;
-	height: 500px;
-	padding: 2rem;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 5px;
-	margin-top: 5px;
-    border-radius: 25px;
-	background-color: var(--cor-complementar2);
-	color: var(--cor-principal);
-}
-
-section:hover {
-	box-shadow: black 3px 3px;
-}
-
-section:nth-child(even) {
-	background-color: var(--cor-complementar1);
-}
-
-img {
-	border-radius: 25px;
-	box-shadow: var(--cor-destaque) 3px 3px;
-	width: 300px;
-}
-
-footer {
+	color: #f1f1f1;
+	scroll-behavior: smooth;
+  }
+  
+  /* Botão "voltar ao topo" */
+  #btnTopo {
+	display: none;
+	border-radius: 50%;
+	font-weight: bold;
+	transition: 0.3s;
+  }
+  #btnTopo:hover {
 	background-color: var(--cor-secundaria);
-	color: var(--cor-complementar2);
-	text-align: center;
-	padding: 1rem;
-}
+	color: white;
+  }
+  

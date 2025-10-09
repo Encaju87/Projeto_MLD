@@ -1,81 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Site</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colégio Estadual Gov. Adolpho de Oliveira Franco</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS customizado -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="header sticky-top" id="home">
-        <h1>Meu Site</h1>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary >
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item ">
-                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="#secao1">Seção 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#secao2">Seção 2</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#secao3">Seção 3</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#secao4">Seção 4</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#secao5">Seção 5</a>
-                      </li>
-                  </ul>
-                </div>
-            </div>
-        </nav>      
-    </header>
+<body id="topo" data-bs-theme="dark">
 
-    <section id="secao1">
-        <h2>Origem</h2>
+  <!-- Cabeçalho fixo -->
+  <header class="bg-dark text-light sticky-top shadow-sm">
+    <div class="container py-3">
+      <h1 class="h3 mb-0 text-center text-warning">Colégio Estadual Gov. Adolpho de Oliveira Franco</h1>
+    </div>
 
-        <img src="https://www.gis.seed.pr.gov.br/gis/exibirFoto.jpg?codFoto=7038" alt="Imagem" class="ImgSec1">
-        <p></p>
-    </section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <a class="navbar-brand" href="#topo">Início</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#secao1">Origem</a></li>
+            <li class="nav-item"><a class="nav-link" href="#secao2">Seção 2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#secao3">Seção 3</a></li>
+            <li class="nav-item"><a class="nav-link" href="#secao4">Seção 4</a></li>
+            <li class="nav-item"><a class="nav-link" href="#secao5">Seção 5</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <section id="secao2">
-        <h2>Seção 2</h2>
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+    <div class="row g-4">
 
-        <img src="https://www.gis.seed.pr.gov.br/gis/exibirFoto.jpg?codFoto=7038" alt="Imagem" class="ImgSec1">
-        <p>Conteúdo da segunda seção.</p>
-    </section>
+      <section id="secao1" class="col-md-6">
+        <div class="card h-100 border-warning shadow-sm">
+          <img src="https://www.gis.seed.pr.gov.br/gis/exibirFoto.jpg?codFoto=7038" class="card-img-top rounded-top" alt="Imagem do prédio antigo">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Origem</h5>
+            <p class="card-text">O seminário Scalabrini-Janssen foi instalado provisoriamente em Lobato e, em 1967, transferido para Astorga. O prédio onde hoje funciona o colégio era o antigo seminário de padres. Em 1995, por permuta entre Município e Estado, o colégio passou a ocupar permanentemente esse espaço.</p>
+          </div>
+        </div>
+      </section>
 
-    <section id="secao3">
-        <h2>Seção 3</h2>
+      <section id="secao2" class="col-md-6">
+        <div class="card h-100 border-secondary shadow-sm">
+          <img src="https://www.gis.seed.pr.gov.br/gis/exibirFoto.jpg?codFoto=7038" class="card-img-top rounded-top" alt="Imagem ilustrativa">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Seção 2</h5>
+            <p class="card-text">Conteúdo da segunda seção.</p>
+          </div>
+        </div>
+      </section>
 
-        <img src="https://www.gis.seed.pr.gov.br/gis/exibirFoto.jpg?codFoto=7038" alt="Imagem" class="ImgSec1">
-        <p>Conteúdo da terceira seção.</p>
-    </section>
+      <section id="secao3" class="col-md-6">
+        <div class="card h-100 border-secondary shadow-sm">
+          <img src="https://www.gis.seed.pr.gov.br/gis/exibirFoto.jpg?codFoto=7038" class="card-img-top rounded-top" alt="Imagem ilustrativa">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Seção 3</h5>
+            <p class="card-text">Conteúdo da terceira seção.</p>
+          </div>
+        </div>
+      </section>
 
-    <section id="secao4">
-        <h2>Seção 4</h2>
+      <section id="secao4" class="col-md-6">
+        <div class="card h-100 border-secondary shadow-sm">
+          <img src="https://www.gis.seed.pr.gov.br/gis/exibirFoto.jpg?codFoto=7038" class="card-img-top rounded-top" alt="Imagem ilustrativa">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Seção 4</h5>
+            <p class="card-text">Conteúdo da quarta seção.</p>
+          </div>
+        </div>
+      </section>
 
-        <img src="https://www.gis.seed.pr.gov.br/gis/exibirFoto.jpg?codFoto=7038" alt="Imagem" class="ImgSec1">
-        <p>Conteúdo da quarta seção.</p>
-    </section>
+      <section id="secao5" class="col-md-6">
+        <div class="card h-100 border-secondary shadow-sm">
+          <img src="https://www.gis.seed.pr.gov.br/gis/exibirFoto.jpg?codFoto=7038" class="card-img-top rounded-top" alt="Imagem ilustrativa">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Seção 5</h5>
+            <p class="card-text">Conteúdo da quinta seção.</p>
+          </div>
+        </div>
+      </section>
 
-    <section id="secao5">
-        <h2>Seção 5</h2>
+    </div>
+  </main>
 
-        <img src="https://www.gis.seed.pr.gov.br/gis/exibirFoto.jpg?codFoto=7038" alt="Imagem" class="ImgSec1">
-        <p>Conteúdo da quinta seção.</p>
-    </section>
+  <!-- Rodapé -->
+  <footer class="bg-dark text-center text-light py-3 border-top border-warning">
+    <p class="mb-0">© 2025 Colégio Estadual Gov. Adolpho de Oliveira Franco</p>
+  </footer>
 
-    <script href="googlze.js" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- Botão voltar ao topo -->
+  <button id="btnTopo" class="btn btn-warning position-fixed bottom-0 end-0 m-4 shadow-sm">⬆</button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
